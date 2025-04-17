@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr{
+     width: 500px;
+}
+
+#errors{
+    color: coral;
+}
+
+#board{
+    width: 450px;
+    height: 450px;
+    border: 1px solid grey;
+
+    margin: 0 auto; /* sets the top and bottom margins of an element to 0 and centers it horizontally*/
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.tile{ /* nyambung ke js*/
+    width: 48px; /*karena mw tambah border 1px */
+    height: 48px;
+    border: 1px solid grey;
+   
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex; /* flex = centre*/
+    justify-content: center; /*sets centre horizontal*/
+    align-items: center; /*sets centre vertical*/
+}
+
+
+#digits{ /* buat pencet2 angka di bawah */
+    width: 450px;
+    height: 50px; /* soalnya 1 tile doang 450/9 */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.number {
+    width: 44px; /*karena mw tambah border 1px */
+    height: 44px;
+    border: 1px solid grey;
+    margin: 2px;
+   
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex; /* flex = centre*/
+    justify-content: center; /*sets centre horizontal*/
+    align-items: center; /*sets centre vertical*/
+}
+
+.number-selected{
+    background-color: grey;
+}
+
+.tile-style{
+    background-color: whitesmoke;
+}
+
+.tile-border-horizontal{
+    border-bottom: 1px solid black;
+}
+
+.tile-border-vertical{
+    border-right: 1px solid black;
+}
